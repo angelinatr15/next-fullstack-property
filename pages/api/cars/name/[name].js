@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const pool = require('../db/connection')
+const pool = require('../../db/connection')
 
 export default async function handler(req, res) {
   const {name} = req.query
