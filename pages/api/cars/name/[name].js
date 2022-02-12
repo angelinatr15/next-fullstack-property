@@ -2,7 +2,7 @@
 const pool = require('../../db/connection')
 
 export default async function handler(req, res) {
-  const {name} = req.query
+  const name = req.query.name;
 
   try {
     const cars = await pool.query(
