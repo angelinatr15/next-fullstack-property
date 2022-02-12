@@ -8,7 +8,7 @@ const Cars = () => {
     console.log(userRef.current.value)
     const name = userRef.current.value
 
-    const url = 'api/cars/name' + name
+    const url = 'api/cars/name/' + name
 
     try {
       const response = await fetch(url)
